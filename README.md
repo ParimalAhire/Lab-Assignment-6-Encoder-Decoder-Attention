@@ -43,18 +43,16 @@
 
 ## 🚀 How to Run
 
-### Option 1: Google Colab (Recommended)
+### Google Colab
 1. Open `BiLSTM_Attention_Tatoeba.ipynb` in [Google Colab](https://colab.research.google.com)
-2. Set Runtime → **GPU** (Tesla T4)
+2. Set Runtime → **GPU**
 3. Click **Run All**
-4. Total runtime: ~8 minutes on GPU
 
-### Option 2: Local (CPU)
+### Local
 ```bash
 pip install torch matplotlib numpy
 jupyter notebook BiLSTM_Attention_Tatoeba.ipynb
 ```
-> Training will take ~15–20 minutes on CPU. Reduce `N_EPOCHS = 15` for faster results.
 
 ---
 
@@ -70,6 +68,18 @@ jupyter notebook BiLSTM_Attention_Tatoeba.ipynb
 | Parameters | 787,811 | 604,451 |
 
 > **Note on val loss anomaly:** The attention model has higher val loss due to overfitting on 500 pairs (30% more parameters). BLEU is the more reliable translation quality metric — attention wins there. This is expected and discussed in detail in Part 4 of the report.
+
+---
+
+## 🔍 What Each Part Covers
+
+| Part | What's Done |
+|---|---|
+| **Part 1** | Paper review: problem, architecture, Bahdanau attention, WMT14 dataset, contributions, limitations |
+| **Part 2** | Code walkthrough: BiLSTMEncoder, BahdanauAttention, AttentionDecoder, training pipeline, execution screenshots |
+| **Part 3** | Both models implemented and compared: loss, BLEU, training time, translation samples, visualizations |
+| **Part 4** | Analysis: how attention improves alignment, why val loss anomaly occurs, comparison with paper |
+| **Part 5** | Conclusion: findings, importance of attention, real-world applicability |
 
 ---
 
