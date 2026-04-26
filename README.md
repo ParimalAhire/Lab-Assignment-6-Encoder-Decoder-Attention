@@ -67,7 +67,7 @@ jupyter notebook BiLSTM_Attention_Tatoeba.ipynb
 | Training Time | 286.2 s | 190.1 s |
 | Parameters | 787,811 | 604,451 |
 
-> **Note on val loss anomaly:** The attention model has higher val loss due to overfitting on 500 pairs (30% more parameters). BLEU is the more reliable translation quality metric — attention wins there. This is expected and discussed in detail in Part 4 of the report.
+> **Note on val loss anomaly:** The attention model has higher val loss due to overfitting on 500 pairs (30% more parameters). BLEU is the more reliable translation quality metric — attention wins there.
 
 ---
 
