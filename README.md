@@ -73,18 +73,6 @@ jupyter notebook BiLSTM_Attention_Tatoeba.ipynb
 
 ---
 
-## 🔍 What Each Part Covers
-
-| Part | Marks | What's Done |
-|---|---|---|
-| **Part 1** | 4 | Paper review: problem, architecture, Bahdanau attention, WMT14 dataset, contributions, limitations |
-| **Part 2** | 6 | Code walkthrough: BiLSTMEncoder, BahdanauAttention, AttentionDecoder, training pipeline, execution screenshots |
-| **Part 3** | 6 | Both models implemented and compared: loss, BLEU, training time, translation samples, visualizations |
-| **Part 4** | 3 | Analysis: how attention improves alignment, why val loss anomaly occurs, comparison with paper |
-| **Part 5** | 1 | Conclusion: findings, importance of attention, real-world applicability |
-
----
-
 ## 🛠️ Hyperparameters
 
 ```python
